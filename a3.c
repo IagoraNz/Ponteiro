@@ -24,7 +24,7 @@ void preencher(int **mat, int lin, int col){
 
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++, k++){
-            *(*(mat + i) + j) = k;
+            *(*(mat + i) + j) = k; //k está incrementando no for
         }
     }
 
