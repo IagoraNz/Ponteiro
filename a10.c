@@ -8,7 +8,7 @@ void multiplica(int **mat, int **mat2, int lin, int col){
 
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++){
-            mat3[i][j] = *(*(mat + i) + j) * *(*(mat2 + i) + j);
+            mat3[i][j] = *(*(mat + i) + j) * *(*(mat2 + i) + j);//A mat3 é preenchida com a multiplicação das outras duas matrizes
         }
     }
     
