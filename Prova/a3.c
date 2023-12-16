@@ -28,7 +28,7 @@ void principal(int **mat, int lin, int col){
     int i, j, soma1 = 0;
 
     for(i = 0; i < lin; i++){
-        for(j = 0; j < col; i++){
+        for(j = 0; j < col; j++){
             if(i == j){
                 soma1 += *(*(mat + i) + j);
             }
@@ -41,7 +41,7 @@ void secundaria(int **mat, int lin, int col){
     int i, soma2 = 0;
 
     for(i = 0; i < lin; i++){
-        soma2 += mat[i][col - 1 - i];
+        soma2 += *(*(mat + i) + col - 1 - i);
     }
     printf("\nA soma da diagonal secundaria: %d", soma2);
 }
