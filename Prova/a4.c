@@ -51,5 +51,7 @@ int main(){
 
     media(vet, tam);
 
+    free(vet);
+
     return 0;
 }

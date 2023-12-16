@@ -66,6 +66,11 @@ int main(){
 
         principal(mat, lin, col);
         secundaria(mat, lin, col);
+
+        for(i = 0; i < lin; i++){
+            free(mat[i]);
+        }
+        free(mat);
     }
     else{
         printf("A matriz deve ser quadrada!");
