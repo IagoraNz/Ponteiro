@@ -84,5 +84,10 @@ int main(){
     media(mat, alunos, notas);
     tabela(mat, alunos, notas);
 
+    for(i = 0; i < alunos; i++){
+        free(mat[i]);
+    }
+    free(mat);
+
     return 0;
 }
