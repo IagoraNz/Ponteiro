@@ -36,13 +36,12 @@ void tabela(float **mat, int lin, int col){
     int i, j;
 
     printf("Aluno\t");
-    for(i = 0; i < col; i++){
+    for(j = 0; j < col; i++){
         printf("Nota %d\t", i + 1); //Insere uma coluna para cada nota
     }
     printf("Media\tSituacao\n");
 
     for(i = 0; i < lin; i++){
-
         printf("%d\t", i + 1); //Printa o aluno
         for(j = 0; j < col + 1; j++){
             printf("%.2f\t", mat[i][j]); //Printa as notas e a média

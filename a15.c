@@ -28,7 +28,7 @@ void transposta(int **mat, int lin, int col){
 
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++){
-            mat2[i][j] = *(*(mat + j) + i);
+            mat2[i][j] = mat[j][i];
         }
     }
     printf("\nMatriz transposta: \n");
