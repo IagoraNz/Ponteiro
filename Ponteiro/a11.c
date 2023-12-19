@@ -9,18 +9,12 @@ int identidade(int **mat, int lin, int col){
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++){
             if(i == j){//Diagonal principal
-                if(*(*(mat + i) + j) == 1){
-                    continue;
-                }
-                else{
-                    fail++; //Contador para caso alguma número não satisfaça a condição
+                if(mat[i][j] != 1){
+                    fail++;
                 }
             }
             else{
-                if(*(*(mat + i) + j) == 0){
-                    continue;
-                }
-                else{
+                if(mat[i][j] != 0){
                     fail2++;
                 }
             }

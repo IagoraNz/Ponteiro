@@ -32,7 +32,7 @@ void trocarlinha(int **mat, int lin, int col, int index){
 
     for(i = 0; i < lin; i++){
         if(i == index){
-            for(j = 0; j < lin; j++){ //Aqui ele só altera a coluna na condição de i == index
+            for(j = 0; j < col; j++){ //Aqui ele só altera a coluna na condição de i == index
                 *(*(mat + i) + j) *= 2; //Pelo seu dobro
             }
         }

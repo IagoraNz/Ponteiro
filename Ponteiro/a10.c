@@ -1,26 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void multiplica(int **mat, int **mat2, int lin, int col){
-    int i, j;
-
-    int mat3[lin][col];
-
-    for(i = 0; i < lin; i++){
-        for(j = 0; j < col; j++){
-            mat3[i][j] = *(*(mat + i) + j) * *(*(mat2 + i) + j);//A mat3 é preenchida com a multiplicação das outras duas matrizes
-        }
-    }
-    
-    printf("Matriz resultante: \n");
-    for(i = 0; i < lin; i++){
-        for(j = 0; j < col; j++){
-            printf("%d\t", mat3[i][j]);
-        }
-        printf("\n");
-    }
-}
-
 void preencher(int **mat, int lin, int col){
     int i, j;
 
@@ -41,6 +21,24 @@ void exibir(int **mat, int lin, int col){
         }
         printf("\n");
     }
+}
+
+void multiplica(int **mat, int **mat2, int lin, int col){
+    int i, j;
+
+    int **mat3 = (int **)malloc(lin * sizeof(int *));
+    for(i = 0; i < lin; i++){
+        mat3[i] = (int *)malloc(col * sizeof(int));
+    }
+
+    for(i = 0; i < lin; i++){
+        for(j = 0; j < col; j++){
+            mat3[i][j] = mat[i][j] * mat2[i][j];//A mat3 é preenchida com a multiplicação das outras duas matrizes
+        }
+    }
+    
+    printf("Matriz resultante: \n");
+    exibir(mat3, lin, col);
 }
 
 int main(){

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/iagot/Ponteiro/Ponteiro",
-      "program": "c:/Users/iagot/Ponteiro/Ponteiro/build/Debug/outDebug",
+      "cwd": "c:/Users/iagot/Ponteiro/Ponteiro/Ponteiro/Ponteiro",
+      "program": "c:/Users/iagot/Ponteiro/Ponteiro/Ponteiro/Ponteiro/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -38,7 +38,7 @@ void espiral(int **matriz, int tam){
                     lin--; // Passo para cima
             }
             
-            if(lin >= tam || col >= tam) //Se estiver fora dos limites da matriz
+            if(lin == tam || col == tam) //Se estiver fora dos limites da matriz
                 break;
             else{ //Caso esteja dentro, poderá inserir o número dentro da matriz
                 num++;
