@@ -9,7 +9,7 @@ void preencher(int **mat, int lin, int col){
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++){
             printf("Matrix[%d][%d]: ", i, j);
-            scanf("%d", &*(*(mat + i) + j));
+            scanf("%d", &mat[i][j]);
         }
     }
 }
@@ -21,7 +21,7 @@ void exibir(int **mat, int lin, int col){
     printf("Matriz: \n");
     for(i = 0; i < lin; i++){
         for(j = 0; j < col; j++){
-            printf("%d ", *(*(mat + i) + j));
+            printf("%d ", mat[i][j]);
         }
         printf("\n");
     }
@@ -33,7 +33,7 @@ void trocarlinha(int **mat, int lin, int col, int index){
     for(i = 0; i < lin; i++){
         if(i == index){
             for(j = 0; j < col; j++){ //Aqui ele só altera a coluna na condição de i == index
-                *(*(mat + i) + j) *= 2; //Pelo seu dobro
+                mat[i][j] *= 2; //Pelo seu dobro
             }
         }
     }
