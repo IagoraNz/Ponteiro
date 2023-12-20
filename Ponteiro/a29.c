@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Fazer uma cruz de 1 numa matriz
+
 void cruz(int **mat, int lin, int col);
 void exibir(int **mat, int lin, int col);
 

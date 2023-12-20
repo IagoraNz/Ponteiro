@@ -41,6 +41,7 @@ int main(){
 
     int lin, col, i;
 
+
     printf("Digite o tamanho de linhas: ");
     scanf("%d", &lin);
 
