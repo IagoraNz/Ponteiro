@@ -4,14 +4,6 @@
 void converte(int *notas){
     int cem = 0, cinquenta = 0, vinte = 0, dez = 0, cinco = 0, dois = 0, um = 0;
 
-    cem = (*notas / 100);
-    cinquenta = ((*notas % 100) / 50);
-    vinte = (((*notas % 100) % 50) / 20);
-    dez = ((((*notas % 100) % 50) % 20) / 10);
-    cinco = (((((*notas % 100) % 50) % 20) % 10) / 5);
-    dois = ((((((*notas % 100) % 50) % 20) % 10) % 5) / 2);
-    um = ((((((*notas % 100) % 50) % 20) % 10) % 5) % 2);
-
     if(*notas >= 100){
         cem = (*notas / 100);
         *notas = *notas % 100;
